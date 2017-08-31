@@ -38,6 +38,25 @@ def fib(n, cache)
 end
 ```
 
+###### (B)ottlenecks
+* Look for the one area of the code that is causing the biggest time issue
+
+```
+#Find all pairs of numbers in an array or N length that have a K difference
+
+array = [1, 7, 5, 9, 2, 12, 3]
+
+#naive solution is to iterate through all and compare with next item in array but this will be O(N^2)
+
+#better solution would be to first sort the array (O(N Log N)) and then go through each and find if the next element has a diff of K
+
+#best solution is to iterate through each item and create a hash table to store values and then iterate again while doing a look up in the hash table for a value of hash[val+k] which results in O(N)
+
+```
+
+###### BCR (Best Conceivable Runtime)
+* The best possible runtime given the arguments but does not necessarily mean it is achievable
+  * It is a good indicator for you to know when you have already achieved fastest possible run time and provides a good "milestone" when working through algorithms
 
 ## Space Complexity
 
@@ -75,3 +94,27 @@ end
 
 
 ```
+
+## Core Data Structures, Algorithms, and Concepts
+
+###### Data Structures
+* Linked Lists
+* Trees, Tries, & Graphs
+* Stacks & Queues
+* Heaps
+* Vectors and ArrayLists
+* Hash Tables
+
+###### Algorithms
+* Breadth-First Search
+* Depth-First Search
+* Binary Search
+* Merge Sort
+* Quick Sort
+
+###### Concepts
+* Bit Manipulation
+* Memory (Stack vs. Heap)
+* Recursion
+* Dynamic Programming
+* Big O Time & Space
