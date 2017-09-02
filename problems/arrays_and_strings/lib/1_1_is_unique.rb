@@ -11,3 +11,6 @@ def is_unique?(str)
 
   true
 end
+
+# time complexity: O(N)
+# worst case would be iterating through str all the way while checking for repeats
