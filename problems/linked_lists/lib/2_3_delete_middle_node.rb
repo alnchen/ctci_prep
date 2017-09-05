@@ -1,3 +1,5 @@
+require_relative '../linked_list'
+
 =begin
 implement an algorithm to delete a node in the middle (i.e. any node but
 the first and last node, not necessarily the exact middle) of a single
