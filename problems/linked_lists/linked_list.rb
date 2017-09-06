@@ -11,12 +11,17 @@ end
 class LinkedList
   attr_accessor :head
 
-  def initialize(val)
+  def initialize(val = nil)
     @head = Node.new(val)
   end
 
   def add(val)
     current = @head
+
+    if @head.val == nil
+      @head.val = val
+      return
+    end
 
     until current.next == nil
       current = current.next
