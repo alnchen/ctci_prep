@@ -135,6 +135,18 @@ end
 * Since each element holds a value and a pointer, it’s more memory intensive.
 * With a singly-linked list it’s pretty much terrible to reverse traverse. Doubly-linked lists contain a pointer to the previous node as well but that’s even more memory intensive.
 
+```
+Linked list time complexity
+╔═══════════╦═════════╦════════════╗
+║ Algorithm ║ Average ║ Worst Case ║
+╠═══════════╬═════════╬════════════╣
+║ Space     ║ O(n)    ║ O(n)       ║
+║ Search    ║ O(n)    ║ O(n)       ║
+║ Insert    ║ O(1)    ║ O(1)       ║
+║ Delete    ║ O(1)    ║ O(1)       ║
+╚═══════════╩═════════╩════════════╝
+```
+
 
 ###### Common functions of Linked Lists
 
@@ -150,3 +162,20 @@ end
 * to_s represent your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: ( data ) -> ( data ) -> ( data ) -> nil
 * insert_at(index) that inserts the node at the given index
 * remove_at(index) that removes the node at the given index. (You will need to update the links of your nodes in the list when you remove a node.)
+
+## Hash Tables
+* A hash table is a map data structure that contains key / value pairs. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+* The hash function usually takes a string as input and it outputs an numerical value. The hash function should always give the same output number for the same input. When two inputs hash to the same numerical output, this is called a collision. The goal is to have few collisions.
+* So when you input a key / value pair into a hash table, the key is run through the hash function and turned into a number. This numerical value is then used as the actual key that the value is stored by. When you try to access the same key again, the hashing function will process the key and return the same numerical result. The number will then be used to look up the associated value. This provides very efficient O(1) lookup time on average.
+
+```
+Hash table time complexity
+╔═══════════╦═════════╦════════════╗
+║ Algorithm ║ Average ║ Worst Case ║
+╠═══════════╬═════════╬════════════╣
+║ Space     ║ O(n)    ║ O(n)       ║
+║ Search    ║ O(1)    ║ O(n)       ║
+║ Insert    ║ O(1)    ║ O(n)       ║
+║ Delete    ║ O(1)    ║ O(n)       ║
+╚═══════════╩═════════╩════════════╝
+```
