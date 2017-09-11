@@ -179,17 +179,3 @@ Hash table time complexity
 ║ Delete    ║ O(1)    ║ O(n)       ║
 ╚═══════════╩═════════╩════════════╝
 ```
-
-## Binary Search Trees
-
-```
-Binary search time complexity
-╔═══════════╦══════════╦════════════╗
-║ Algorithm ║ Average  ║ Worst Case ║
-╠═══════════╬══════════╬════════════╣
-║ Space     ║ O(n)     ║ O(n)       ║
-║ Search    ║ O(log n) ║ O(n)       ║
-║ Insert    ║ O(log n) ║ O(n)       ║
-║ Delete    ║ O(log n) ║ O(n)       ║
-╚═══════════╩══════════╩════════════╝
-```
